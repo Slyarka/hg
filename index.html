@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.img1{
+			width: 300px;
+			height: 180px;
+			position: absolute;
+			top: 300px;
+			left: 200px;
+			background-size: 100% 100%;
+			transition: 1s;
+		}
+		.img2{
+			width: 300px;
+			height: 180px;
+			position: absolute;
+			top: 550px;
+			left: 400px;
+			background-size: 100% 100%;
+			transition: 1s;
+		}
+		.img3{
+			width: 300px;
+			height: 180px;
+			position: absolute;
+			top: 300px;
+			left: 600px;
+			background-size: 100% 100%;
+			transition: 1s;
+		}
+		.img4{
+			width: 300px;
+			height: 180px;
+			position: absolute;
+			top: 550px;
+			left: 800px;
+			background-size: 100% 100%;
+			transition: 1s;
+		}
+		.img5{
+			width: 300px;
+			height: 180px;
+			position: absolute;
+			top: 300px;
+			left: 1000px;
+			background-size: 100% 100%;
+			transition: 1s;
+		}
+		.button{
+			width: 100px;
+			height: 50px;
+			position: absolute;
+			top: 150px;
+			left: 700px;
+			background-color: red;
+			font-size: 20px;
+		}
+		.p{
+			position: absolute;
+			top: 100px;
+			left: 580px;
+			display: none;
+			font-size: 40px;
+			color: orange;
+		}
+		.pwon{
+			position: absolute;
+			top: 100px;
+			left: 580px;
+			display: none;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<button class="button">Играть</button>
+	<p class="p">Найди красную панду</p>
+	<p class="pwon"><a style="text-decoration: none; color: red;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s&ab_channel=RickAstley">Ты не проиграл</a></p>
+	<div style="background-image: url(medoed.jpg);" class="img1">
+		
+	</div>
+	<div style="background-image: url(horek.jpg);" class="img2">
+		
+	</div>
+	<div style="background-image: url(kiwi.jpg);" class="img3">
+		
+	</div>
+	<div style="background-image: url(redpanda.jpg);" class="img5">
+		
+	</div>
+	<div style="background-image: url(lion.jpg);" class="img4">
+		
+	</div>
+	<script>
+		document.querySelector(".button").onclick = function(){
+			document.querySelector(".img1").style.background = "black"
+			document.querySelector(".img2").style.background = "black"
+			document.querySelector(".img3").style.background = "black"
+			document.querySelector(".img4").style.background = "black"
+			document.querySelector(".img5").style.background = "black"
+			document.querySelector(".img1").style.left = "1000px"
+			document.querySelector(".img1").style.top = "550px"
+			document.querySelector(".img5").style.left = "200px"
+			document.querySelector(".img5").style.top = "550px"
+			document.querySelector(".img3").style.top = "550px"
+			document.querySelector(".img2").style.top = "300px"
+			document.querySelector(".img2").style.left = "800px"
+			document.querySelector(".img4").style.top = "300px"
+			document.querySelector(".img4").style.left = "400px"
+			document.querySelector(".p").style.display = "block"
+			document.querySelector(".button").style.display = "none"
+		}
+		document.querySelector(".img1").onclick = function(){
+			alert("NOPE")
+			document.querySelector(".img1").style.backgroundImage = "url(medoed.jpg)"
+			document.querySelector(".img1").style.backgroundSize = "100% 100%"
+			document.querySelector(".img1").style.opacity = "0.6"
+		}
+		document.querySelector(".img2").onclick = function(){
+			alert("NO")
+			document.querySelector(".img2").style.backgroundImage = "url(horek.jpg)"
+			document.querySelector(".img2").style.backgroundSize = "100% 100%"
+			document.querySelector(".img2").style.opacity = "0.6"
+		}
+		document.querySelector(".img3").onclick = function(){
+			alert("HEHE... no")
+			document.querySelector(".img3").style.backgroundImage = "url(kiwi.jpg)"
+			document.querySelector(".img3").style.backgroundSize = "100% 100%"
+			document.querySelector(".img3").style.opacity = "0.6"
+		}
+		document.querySelector(".img4").onclick = function(){
+			alert("Yep")
+			document.querySelector(".img4").style.backgroundImage = "url(redpanda.jpg)"
+			document.querySelector(".img4").style.backgroundSize = "100% 100%"
+			document.querySelector(".img4").style.height = "450px"
+			document.querySelector(".img4").style.width = "700px"
+			document.querySelector(".img1").style.display = "none"
+			document.querySelector(".img2").style.display = "none"
+			document.querySelector(".img3").style.display = "none"
+			document.querySelector(".img5").style.display = "none"
+			document.querySelector(".p").style.display = "none"
+			document.querySelector(".pwon").style.display = "block"
+		}
+		document.querySelector(".img5").onclick = function(){
+			alert("no")
+			document.querySelector(".img5").style.backgroundImage = "url(lion.jpg)"
+			document.querySelector(".img5").style.backgroundSize = "100% 100%"
+			document.querySelector(".img5").style.opacity = "0.6"
+		}
+	</script>
+</body>
+</html>
